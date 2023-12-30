@@ -1,0 +1,36 @@
+
+.features {
+  background-color: aliceblue;
+  margin-top: 40px;
+}
+
+.features-heading {
+  font-size: 2em;
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+.features-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font: arial;
+  font-weight: 600;
+  font-size: large;
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.features-img {
+  width: 70px;
+}
