@@ -177,6 +177,18 @@ header {
 }
 
 
+.chatbot-container {
+  position: fixed;
+  bottom: 30px; /* Adjust the distance from the bottom as needed */
+  right: 50px; /* Adjust the distance from the right as needed */
+  z-index: 1000; /* Ensure the chatbot icon appears above other elements */
+}
+
+
+
+#chatbot-img {
+  width: 80px;
+}
 
 
 
