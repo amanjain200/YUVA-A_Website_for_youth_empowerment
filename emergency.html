@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+    <style>
+      @keyframes blink-text {
+        0% {
+          color: red;
+        }
+        50% {
+          color: lightsalmon;
+        }
+        100% {
+          color: red;
+        }
+      }
+      .main-banner {
+        width: 30%;
+        height: 100%;
+        margin-left: 35%;
+        margin-top: 6%;
+      }
+      .helpline-number {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: red;
+        margin-top: 2%;
+        margin-left: 17%;
+        animation: blink-text 0.5s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html"
+          ><img id="logo-img" src="images/logo.png" alt="logo"
+        /></a>
+      </div>
+      <div class="navigation-items">
+        <a class="navigation-item" href="myths.html">MythsVsFacts</a>
+        <a class="navigation-item" href="emergency.html">Free Services</a>
+        <a class="navigation-item" href="competitions.html">Competitions</a>
+        <a class="navigation-item" href="collabs.html">Collab</a>
+        <a class="navigation-item" href="about.html">About</a>
+        <a class="navigation-item" href="certificate.html">Certificate</a>
+      </div>
+    </header>
+    <main>
+      <img class="main-banner" src="images/features/helpline.png" alt="" />
+      <div class="helpline-number">CALL XXXX-XXXX-XXXX NOW</div>
+    </main>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <center id="heading">This Page is Under Development</center>
+
+    <div class="chatbot-container">
+      <div class="chatbot-icon">
+        <a href="https://therapy-chatbot.vercel.app/" target="_blank">
+          <img
+            id="chatbot-img"
+            src="images/chatbot(1).png"
+            alt="Chatbot Icon"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

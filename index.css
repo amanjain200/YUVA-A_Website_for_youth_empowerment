@@ -151,6 +151,31 @@ header {
   animation: blink 1s infinite; /* You can adjust the duration as needed */
 }
 
+@keyframes pledge-blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pledge-heading {
+  text-decoration: none;
+  font-size: 60px;
+  font-weight: 700;
+  color: sandybrown;
+  text-align: center;
+  border: 0.5px solid sandybrown;
+  margin: 5px 20px;
+  background-color: whitesmoke;
+  animation: pledge-blink 1s infinite;
+  margin-left: 10%;
+}
+
 
 .testimonial-heading {
   font-size: 70px;
