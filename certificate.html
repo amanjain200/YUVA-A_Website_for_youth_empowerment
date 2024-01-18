@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="social-icons.css" />
     <title>Document</title>
     <style>
       @keyframes blink-text {
@@ -53,12 +54,19 @@
         font-size: 16px;
         cursor: pointer;
       }
+
+      .certificate-btn:active{
+        height: 46px;
+        width: 104px;
+        font-weight: bold;
+      }
       .share-now {
         background-color: lightpink;
         text-align: center;
         font-size: 20px;
         padding: 20px;
         font-weight: bold;
+        margin-top: 30px;
       }
     </style>
   </head>
@@ -91,16 +99,54 @@
         type="text"
         placeholder="  Enter your name  "
       />
-      <button class="certificate-btn">Submit</button>
+      <button class="certificate-btn"> Take Pledge </button>
     </div>
 
-    <br /><br /><br />
     <div class="share-now">
       🎁Share this certificate on different social media platforms by tagging us
       & stand a chance to win exciting prizes🎁
     </div>
+    <footer class = "footer">
+      <div class="rounded-social-buttons">
+        <a
+          class="social-button facebook"
+          href="https://www.facebook.com/"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          class="social-button twitter"
+          href="https://www.twitter.com/"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          class="social-button linkedin"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          class="social-button tiktok"
+          href="https://www.tiktok.com/"
+          target="_blank"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+        <a
+          class="social-button youtube"
+          href="https://www.youtube.com/"
+          target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          class="social-button instagram"
+          href="https://www.instagram.com/"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
 
-    <br /><br /><br /><br /><br /><br />
     <div class="chatbot-container">
       <div class="chatbot-icon">
         <a href="https://therapy-chatbot.vercel.app/" target="_blank">
@@ -116,5 +162,11 @@
     <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
     <script src="filesaver.js"></script>
     <script src="index.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
