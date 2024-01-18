@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Document</title>
-  <style>
-    @keyframes border-blink{
-      0%{
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+      @keyframes border-blink {
+        0% {
+          border: 5px solid palevioletred;
+        }
+        50% {
+          border: 5px solid white;
+        }
+        100% {
+          border: 5px solid palevioletred;
+        }
+      }
+      .myth-table {
+        width: 60%;
+        height: 100%;
+        margin-left: 20%;
         border: 15px solid palevioletred;
+        animation: border-blink 5s infinite;
       }
-      50%{
-        border: 15px solid white;
-      }
-      100%{
+      .myths-facts-image {
+        width: 99%;
+        height: 100%;
         border: 15px solid palevioletred;
+        animation: border-blink 5s infinite;
       }
-      
-    }
-    .myth-table{
-      width: 60%;
-      height: 100%;
-      margin-left: 20%;
-      border: 15px solid palevioletred;
-      animation: border-blink 1s  infinite;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div id="logo">
-      <a href="index.html"><img id="logo-img"  src="images/logo.png" alt="logo" /></a>
-    </div>
-    <div class="navigation-items">
-      <a class="navigation-item" href="myths.html">MythsVsFacts</a>
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html"
+          ><img id="logo-img" src="images/logo.png" alt="logo"
+        /></a>
+      </div>
+      <div class="navigation-items">
+        <a class="navigation-item" href="myths.html">MythsVsFacts</a>
         <a class="navigation-item" href="emergency.html">Free Services</a>
         <a class="navigation-item" href="competitions.html">Competitions</a>
         <a class="navigation-item" href="collabs.html">Collab</a>
         <a class="navigation-item" href="about.html">About</a>
         <a class="navigation-item" href="certificate.html">Certificate</a>
-    </div>
-  </header>
-  <main>
-    <br><br><br><br><br><br><br>
-    <img class="myth-table" src="images/myths vs facts.jpeg" alt="MythsVsFacts">
-
-
-
-    <center id="heading">
-      This Page is Under Development
-    </center>
-
-
-
-
-    <div class="chatbot-container">
-      <div class="chatbot-icon">
-        <a href="https://therapy-chatbot.vercel.app/" target="_blank">
-          <img id="chatbot-img" src="images/chatbot(1).png" alt="Chatbot Icon">
-        </a>
       </div>
-  </div>
-  </main>
-</body>
+    </header>
+    <main>
+      <br /><br /><br />
+      <img class="myths-facts-image" src="images/alcoholdrugs1.jpg" alt="" />
+      <img class="myths-facts-image" src="images/alcoholdrugs2.jpg" alt="" />
+      <img class="myths-facts-image" src="images/alcoholdrugs3.jpg" alt="" />
+      <img class="myth-table" src="images/alcoholdrugs4.jpg" alt="" />
+      <img
+        class="myth-table"
+        src="images/myths vs facts.jpeg"
+        alt="MythsVsFacts"
+      />
+
+      <div class="chatbot-container">
+        <div class="chatbot-icon">
+          <a href="https://therapy-chatbot.vercel.app/" target="_blank">
+            <img
+              id="chatbot-img"
+              src="images/chatbot(1).png"
+              alt="Chatbot Icon"
+            />
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

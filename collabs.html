@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
     <style>
+      body {
+        background-color: antiquewhite;
+      }
+      #heading {
+        background-color: antiquewhite;
+      }
       @keyframes blink-text {
         0% {
           color: green;
@@ -33,6 +39,36 @@
         margin-left: 27%;
         animation: blink-text 2s infinite;
       }
+      #campus-amb {
+        width: 99%;
+        height: 100%;
+        border: 5px dotted green;
+      }
+      #influencer-col {
+        width: 99%;
+        height: 100%;
+        border: 5px dotted lightpink;
+      }
+      .campus-text {
+        background-color: lightpink;
+        text-align: center;
+        font-size: 20px;
+        padding: 50px 20px;
+        font-weight: bold;
+      }
+      .influencer-text {
+        background-color: lightpink;
+        text-align: center;
+        font-size: 20px;
+        padding: 50px 20px;
+        font-weight: bold;
+      }
+      #campus-join-btn, #collab-join-btn {
+        color: blue;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -52,8 +88,17 @@
       </div>
     </header>
 
-    <br><br><br><br><br><br><br>
-    <center id="heading">This Page is Under Development</center>
+    <br><br><br>
+
+    
+
+    <center id="heading">Are you a Student?</center>
+    <img id="campus-amb" src="images/campus-ambassador.png" alt="">
+    <div class="campus-text"><span id="campus-join-btn">Click Here</span> to join our Campus Ambassador program and Win goodies and Certificates</div>
+    <br><br><br>
+    <center id="heading">Are you an Influencer?</center>
+    <img id="influencer-col" src="images/Influencer-collaboration.png" alt="">
+    <div class="influencer-text"><span id="collab-join-btn">Click Here</span>  to join us in this fight against Drugs and Delinquency!</div>
 
     <div class="chatbot-container">
       <div class="chatbot-icon">
@@ -66,5 +111,6 @@
         </a>
       </div>
     </div>
+    <script src="collabs.js"></script>
   </body>
 </html>
