@@ -37,6 +37,30 @@ const generatePDF = async (name) => {
     color: rgb(0.95, 0.1, 0.1),
   });
 
-  const pdfDataUri = await pdfdoc.saveAsBase64({ dataUri: true });
-  saveAs(pdfDataUri, "pledgeCertificate.pdf");
+  // const pdfDataUri = await pdfdoc.saveAsBase64({ dataUri: true });
+  // saveAs(pdfDataUri, "pledgeCertificate.pdf");
+
+  const pdfBytes = await pdfdoc.save();
+  //fs.writeFileSync("output.pdf", pdfBytes);
+  // Create a Blob from the Uint8Array
+  const blob = new Blob([pdfBytes], { type: "application/pdf" });
+
+  // Create an anchor element
+  const link = document.createElement("a");
+
+  // Set the link's href to the Blob's object URL
+  link.href = window.URL.createObjectURL(blob);
+
+  // Set the download attribute to specify the filename
+  usernamevalue = userName[0].value;
+  link.download = "Certificate - " + usernamevalue + ".pdf";
+
+  // Append the link to the document
+  document.body.appendChild(link);
+
+  // Trigger a click on the link to initiate the download
+  link.click();
+
+  // Remove the link from the document
+  document.body.removeChild(link);
 };
